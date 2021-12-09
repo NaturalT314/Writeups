@@ -1,5 +1,5 @@
 **sub_math - JUSTCTF 2021**
-
+Flag Format = JUSTCTF{F14G}
 **_________________________________________________________________________________________________________________**
 
 First look at the python script provided:
@@ -33,7 +33,7 @@ for t in flag
 ```
 ord(t) << 15
 ```
-4. Bit-wise or number 2 and 3 and convert value to a string
+4. Bit-wise OR number 2 and 3 and convert value to a string
 ```
 str((( 51415 & 5 + 314) | ord(t) << 15 ))
 ```
@@ -41,3 +41,10 @@ str((( 51415 & 5 + 314) | ord(t) << 15 ))
 ```
 return ''.join([str((( 51415 & 5 + 314) | ord(t) << 15 ))  for t in flag ])
 ```
+***Writing our script***
+1. To get our flag we must reverse what the encrypting script did, starting with convering the bytes to long
+2. After testing with the enc function and inserting the first letters of our flag:
+
+![image](https://user-images.githubusercontent.com/74961214/145372474-1248817e-aa2c-4c82-bf8a-9b127c37a66d.png)
+
+3. 
