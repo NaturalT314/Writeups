@@ -21,7 +21,13 @@ The way I would go around solving this problem would be to analyze the encryptin
 ```
 return''.join([str((( 51415 & 5 + 314) | ord(t) << 15 ))  for t in flag ]) 
 ```
-1. is passing on every letter in our flag since flag is a string
+1. Iterating on every letter in our flag since flag is a string
 ```
 for t in flag
 ```
+2. A fancy way of generating the number 23, you can check using python
+```
+( 51415 & 5 + 314)
+```
+3. Multiplying the ASCII of t by 2*/*15
+4. 
