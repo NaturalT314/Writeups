@@ -29,5 +29,15 @@ for t in flag
 ```
 ( 51415 & 5 + 314)
 ```
-3. Multiplying the ASCII of t by 2*/*15
-4. 
+3. Multiplying the ASCII of t by 2**15
+```
+ord(t) << 15
+```
+4. Bit-wise or number 2 and 3 and convert value to a string
+```
+str((( 51415 & 5 + 314) | ord(t) << 15 ))
+```
+5. Join all of the strings and return
+```
+return ''.join([str((( 51415 & 5 + 314) | ord(t) << 15 ))  for t in flag ])
+```
