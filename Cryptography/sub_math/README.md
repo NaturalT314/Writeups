@@ -7,8 +7,11 @@ First look at the python script provided:
 ![image](https://user-images.githubusercontent.com/74961214/145368713-2a4a74ff-bd05-44a7-8808-07bf5bc94969.png)
 
 1.The flag is stored in a flag.txt and is read as text
+
 2.Some cryptic function enc is defined
+
 3.The flag is sent to enc and converted to bytes after
+
 4.written as bytes to cipher.enc
 
 Taking a look at cipher.enc:
