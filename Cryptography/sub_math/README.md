@@ -46,6 +46,7 @@ return ''.join([str((( 51415 & 5 + 314) | ord(t) << 15 ))  for t in flag ])
 2. After testing with the enc function and inserting the first letters of our flag:
 
 ![image](https://user-images.githubusercontent.com/74961214/145372474-1248817e-aa2c-4c82-bf8a-9b127c37a66d.png)
+
 3. We realize that each character encrypted will result in a 7 digit number
 4. I would rather treat the encrypting function as a black-box and pass each printable character to the function
 5. Until some character returns a value equal to the 7 digit number
