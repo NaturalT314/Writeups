@@ -1,6 +1,6 @@
 **sub_math - JUSTCTF 2021**
 
-**__________________________________________________________________________________________________________________________________________________________________**
+**_________________________________________________________________________________________________________________**
 
 First look at the python script provided:
 
@@ -16,6 +16,7 @@ Taking a look at cipher.enc:
 ![image](https://user-images.githubusercontent.com/74961214/145369514-7c7d4d4d-cefa-4c5b-ae9f-d80b9c3107e7.png)
 
 **Solution**
+
 The way I would go around solving this problem would be to analyze the encrypting function and try to reverse
 ```
 return''.join([str((( 51415 & 5 + 314) | ord(t) << 15 ))  for t in flag ]) 
