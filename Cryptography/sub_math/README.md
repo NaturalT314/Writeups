@@ -21,7 +21,7 @@ The way I would go around solving this problem would be to analyze the encryptin
 ```
 return''.join([str((( 51415 & 5 + 314) | ord(t) << 15 ))  for t in flag ]) 
 ```
-1.```
+1. is passing on every letter in our flag since flag is a string
+```
 for t in flag
 ```
-is passing on every letter in our flag since flag is a string
